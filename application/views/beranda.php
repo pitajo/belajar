@@ -58,10 +58,10 @@
                     	 <ul class="container-fluid"><a href="#"> Inggris &ensp; Indonesia</a></ul>
                     </p>
                     <p>
-                        <ul class="container-fluid"><a class="page-scroll" href="#" style="color:#000"> Untuk Perusahaan</a> </ul>
+                        <ul class="container-fluid"><a class="page-scroll" href="login.php" style="color:#000"> Untuk Perusahaan</a> </ul>
                     </p>
                     <p>
-                        <ul class="container-fluid"><a class="page-scroll" href="logins/ " style="color:#000"><b>Masuk/Mendaftar</b></a>
+                        <ul class="container-fluid"><a class="page-scroll" href="<?php echo site_url('welcome/loginpelamar')?>" style="color:#000"><b>Masuk/Mendaftar</b></a>
                         </ul>
                     </p>
             </div>
@@ -108,7 +108,8 @@
         </div>
 
         
-        </div>
+    </div>
+
         <div class="box">
         <div class="container">
         	<div class="row-row-centered">

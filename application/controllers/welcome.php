@@ -22,10 +22,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('beranda');
 	}
+	public function loginpelamar()
+	{
+		$this->load->view('login');
+	}
 
-    public function login()
-    {
-        //$this->calon_models->login();
-        $this->load->view('login');
-    }
 }
