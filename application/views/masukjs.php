@@ -4,6 +4,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,9 +22,18 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.<?php echo base_url();?>assets/js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
+
     <div class="brand"></div>
     <div class="brand"></div>
 
@@ -37,12 +47,15 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">IntelliSys</a>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"-->
             <div class="colapse navbar-right">        
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <p>
-                    	 <ul class="container-fluid"><a href="#"> Inggris &ensp; Indonesia</a></ul>
+                         <ul class="container-fluid"><a href="#"> Inggris &ensp; Indonesia</a></ul>
                     </p>
                     <p>
                         <ul class="container-fluid"><a class="page-scroll" href="login.php" style="color:#000"> Untuk Perusahaan</a> </ul>
@@ -52,79 +65,65 @@
                         </ul>
                     </p>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
     </nav>
 
-<div class="brand"></div>
-    <div class="container">
-        <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive img-full" src="<?php echo base_url();?>assets/img/P1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="<?php echo base_url();?>assets/img/P2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="<?php echo base_url();?>assets/img/P3.jpg" alt="">
-                            </div>
-                        </div>
 
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
-                    </div>
-            </div>
-        </div>
-    </div>
-
-        <div class="box">
+<div class="box"> 
+<div class="col-lg-12 text-center">
+    <form method="post" action="index.html">
+        <p>Anda Pengguna Baru?</p>
+        <a href="<?php echo site_url('welcome/mendaftarpelamar')?>" class="btn btn-default" size="10px"> Mendaftar </a> <br/>
+        <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
+        <p><input type="password" name="password" value="" placeholder="Password"></p>
+        <p class="remember_me">
+        <label>
+            <input type="checkbox" name="remember_me" id="remember_me"> Ingat saya?
+        </label> &nbsp; &nbsp; Forgot your password?
+        </p>
+        <a href="<?php echo site_url('welcome/dashboardjs')?>" class="btn btn-default" size="10px"> Masuk </a> <br/>
+        <a href="#" class="btn btn-default" size="10px"> Masuk dengan akun Gmail </a> <br/>
+    </form>
+</div>
+</div>
+<div class="box">
         <div class="container">
-        	<div class="row-row-centered">
-        		<div class="col-md-3 col-centered">
-        			<div class="item">
-        				<div class="content">
-        					<p><u>Tentang IntelliSys Loker</u></p>
-        					<p><a href="http://www.intellisys.co.id/" style="text-decoration:none">Site Map</a></p>
-        					<p>Tentang Kami</p>
-        					<p>Kritik dan Saran</p>
-        				</div>
-        			</div>
-        		</div>
+            <div class="row-row-centered">
+                <div class="col-md-3 col-centered">
+                    <div class="item">
+                        <div class="content">
+                            <p><u>Tentang IntelliSys Loker</u></p>
+                            <p><a href="http://www.intellisys.co.id/" style="text-decoration:none">Site Map</a></p>
+                            <p>Tentang Kami</p>
+                            <p>Kritik dan Saran</p>
+                        </div>
+                    </div>
+                </div>
 
-        		<div class="col-md-3 col-centered">
-        			<div class="item">
-        				<div class="content">
-        					<p><u>Pencari Kerja</u></p>
-        					<p>Ketentuan Pengguna</p>
-        					<p>Kebijakan Privasi</p>
-        					<p>Panduan</p>
-        				</div>
-        			</div>
-        		</div>
+                <div class="col-md-3 col-centered">
+                    <div class="item">
+                        <div class="content">
+                            <p><u>Pencari Kerja</u></p>
+                            <p>Ketentuan Pengguna</p>
+                            <p>Kebijakan Privasi</p>
+                            <p>Panduan</p>
+                        </div>
+                    </div>
+                </div>
 
-        		<div class="col-md-3 col-centered">
-        			<div class="item">
-        				<div class="content">
-        					<p><u>Perusahaan</u></p>
-        					<p>Ketentuan Pengguna</p>
-        				</div>
-        			</div>
-        		</div>	
-        	</div>
+                <div class="col-md-3 col-centered">
+                    <div class="item">
+                        <div class="content">
+                            <p><u>Perusahaan</u></p>
+                            <p>Ketentuan Pengguna</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>  
+            </div>
         </div>
         </div>
     </div>
@@ -153,5 +152,7 @@
         interval: 5000 //changes the speed
     })
     </script>
+
 </body>
+
 </html>

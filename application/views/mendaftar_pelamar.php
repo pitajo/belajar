@@ -70,25 +70,58 @@
         <!-- /.container-fluid -->
     </nav>
 
+<div class="brand"></div>
+    <div class="box">
+    	<div class="">
+    		<div class="container">
+            <div class="row-row-centered">
 
-<div class="box"> </div>
-      <form method="post" action="index.html">
-        <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
-        <p><input type="password" name="password" value="" placeholder="Password"></p>
-        <p class="remember_me">
-          <label>
-            <input type="checkbox" name="remember_me" id="remember_me">
-            Remember me
-          </label>
-        </p>
-        <p class="submit"><input type="submit" name="commit" value="Login"></p>
-      </form>
+            <!--ini ntar diubah-->
+            <div class="col-md-3 col-centered">
+            <div class="item">
+            <div class="content">
+            </div></div></div>
+            
+            <div class="col-md-3 col-centered">
+            <div class="item"> 
+            <div class="content">
+	    		<p>Nama Depan</p>
+	        	<p>Nama Belakang</p> 
+	        	<p>Email</p><br>
+	        	<p>Alamat</p>
+	        	<p>Kewarganegaraan</p> <br>
+	        	<p>No.Telepon</p> 
+	        	<p>No.Ponsel</p>
+    		</div>
+    		</div>
+    		</div>
+
+    		<div class="col-md-3 col-centered">
+            <div class="item">
+            <div class="content">
+	    		<p><input type="text" name="nd" value="" placeholder=" "></p>
+	        	<p><input type="" name="nb" value="" placeholder=" "></p>
+	        	<p><input type="" name="Email" value="" placeholder=" "></p>
+	        	<p><input type="" name="alamat" value="" placeholder=" "></p>
+				<p><select name="selectionField">
+				  <option value="indonesia">Indonesia</option>
+				  <option value="irak">Irak</option>
+				  <option value="israel">Israel</option>
+				  <option value="roma">Roma</option>
+				</select></p>
+	        	<p><input type="" name="notel" value="" placeholder=" "></p>
+	        	<p><input type="" name="nopon" value="" placeholder=" "></p>
+				<p class="colapse navbar-right"><a href="<?php echo site_url('welcome/mendaftarpelamar1')?>" class="btn btn-default" size="10px"> Selanjutnya </a></p>
+    		</div>
+    		</div>
+    		</div>
+
+    		</div>
+    		</div>
+    	</div>
     </div>
 
-    <div class="login-help">
-      <p>Forgot your password? <a href="beranda">Click here to reset it</a>.</p>
-    </div>
-  </section>
+
 <div class="box">
         <div class="container">
             <div class="row-row-centered">
